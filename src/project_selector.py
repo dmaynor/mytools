@@ -7,7 +7,7 @@ from dataclasses import dataclass, field
 
 """
 author: dmaynor@gmail.com
-The script will scan through my !/code and !/home directory to look for virtual enviroments for python by looking for a venv directory structure.
+The script will scan through my ~/code and ~/home directory to look for virtual enviroments for python by looking for a venv directory structure.
 It can be called from my ~/tools/bin directory so first it has to change working directory to my home directory, It will then scan ~/code and ~/work 
 looking for venv directories. If it finds one the full path to venv is sotred in a list. When the scan is complete the list of all discovered venv directories
 is displayed to the user. The user can then select a venv directory and the script will then change the working directory to that directory and execute the venv/bin/activate script.
